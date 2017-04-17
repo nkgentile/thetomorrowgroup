@@ -1,0 +1,117 @@
+/*
+ Theme Name: The Tomorrow Group
+ Theme URI: http://www.thetomorrowgroup.com/
+ Author: Noah Gentile
+ Author URI: http://www.noahgentile.com/
+ Template: twentyseventeen
+ Description: Child theme for Twenty Seventeen.
+ Version: 0.1
+ License: GNU General Public License v2 or later
+ License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:
+ Text Domain: thetomorrowgroup
+ */
+
+/* Align main nav to center */
+#masthead, #top-menu{
+	text-align: center;
+}
+
+/* Change masthead color */
+#masthead{
+/*	background-color: #efe7da;*/
+}
+
+.single-member .single-featured-image-header{
+	border-radius: 100%;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 5em;
+}
+
+.single-member #primary.content-area{
+	float: initial;
+	margin: 0 auto;
+}
+
+/* Change default list style */
+.widget ul{
+	list-style: disc;
+}
+
+.widget ul li{
+	border: none;
+	border-bottom: 1px dotted rgba(0, 0, 0, 0.15);
+}
+
+.widget{
+	padding: 0;
+}
+
+h2{
+	padding: 0;
+}
+
+.widget .panel-grid{
+	margin-bottom: 0;
+}
+
+
+/* Hide Page names */
+.page .entry-header{
+	display: none;
+}
+
+/* Change Footer Color */
+#colophon.site-footer{
+	background-color: #223e7a;
+}
+
+#colophon.site-footer *{
+	color: white;
+}
+
+.ttg-members{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.ttg-member{
+	flex: 0 0 15em;
+	
+	margin-right: 4em;
+	margin-left: 4em;
+	margin-bottom: 4em;
+	
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: flex-start;
+	
+	cursor: pointer;
+	
+	text-align: center;
+}
+
+.ttg-member > h3{
+	padding: 0;
+}
+
+.ttg-member > h4{
+	padding: 0;
+}
+
+.ttg-member-thumbnail{
+	width: 150px;
+	flex: 0 0 150px;
+	
+	border-radius: 100%;
+	
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: gray;
+}
