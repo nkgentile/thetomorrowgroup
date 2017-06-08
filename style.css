@@ -17,6 +17,11 @@
 	text-align: center;
 }
 
+/* Overwrite Full-Height Hero Image on Front Page */
+.has-header-image .custom-header-media img{
+	height: 172px;
+}
+
 /* Change masthead color */
 #masthead{
 /*	background-color: #efe7da;*/
