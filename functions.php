@@ -44,7 +44,8 @@
 				'supports'		=>	array(
 					'title',
 					'thumbnail',
-					'editor'
+					'editor',
+					'excerpt'
 				),
 				'public'		=>	true,
 				'has_archive'	=>	true
