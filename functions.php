@@ -11,8 +11,8 @@
 		);
 	}
 	
-	add_action('init', 'create_post_type');
-	function create_post_type(){
+	add_action('init', 'create_member_type');
+	function create_member_type(){
 		register_post_type(
 			'member',
 			array(
@@ -25,6 +25,26 @@
 					'thumbnail',
 					'editor',
 					'excerpt'
+				),
+				'public'		=>	true,
+				'has_archive'	=>	true
+			)
+		);
+	}
+	
+	add_action('init', 'create_service_type');
+	function create_service_type(){
+		register_post_type(
+			'service',
+			array(
+				'labels'		=>	array(
+					'name'			=>	__('Services'),
+					'singular_name'	=>	__('Service')
+				),
+				'supports'		=>	array(
+					'title',
+					'thumbnail',
+					'editor'
 				),
 				'public'		=>	true,
 				'has_archive'	=>	true

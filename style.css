@@ -120,3 +120,39 @@ h2{
 	background-repeat: no-repeat;
 	background-color: gray;
 }
+
+#ttg-services{
+	position: relative;
+	overflow-x: hidden;
+	height: auto;
+}
+
+#ttg-services-tabs{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-content: center;
+}
+
+#ttg-services-tabs > *{
+	flex: 1 1 auto;
+	max-width: 50px;
+	height: 50px;
+}
+
+#ttg-services-slider{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+	
+	transition-property: transform;
+	transition-duration: 300ms;
+	transition-timing-function: ease-in-out;
+}
+
+.ttg-service{
+	flex: 0 0 100%;
+	height: auto;
+	padding: 15px 30px;
+}
